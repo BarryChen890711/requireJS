@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>requirejs入门（一）</title>
+        <meta charset="utf-8">
+        <!-- <script data-main="js/main" src="js/require.min.js" defer async="true"></script> -->
+        <script data-main="js/main" src="js/require.min.js" async="true"></script>
+        <style type="text/css">
+            .sprite {background:url(http://img1.tiancitycdn.com/project5/csol2/event/2016/0817version/images/sprite.png) no-repeat 0 0;}
+            .runContainer {border:1px solid #1571e6;width:881px;height:549px;position: relative;margin:0 auto;}
+            .runBox {width:881px;height:549px;overflow: hidden;}
+            .runBox a {width:881px;height:549px;float:left;display: block}
+            .runBox .map-1 {background: url(http://img1.tiancitycdn.com/project5/csol2/event/2016/0817version/images/map-1.jpg) no-repeat 0 0;}
+            .runBox .map-2 {background: url(http://img1.tiancitycdn.com/project5/csol2/event/2016/0817version/images/map-2.jpg) no-repeat 0 0;}
+            .runBox .map-3 {background: url(http://img1.tiancitycdn.com/project5/csol2/event/2016/0817version/images/map-3.jpg) no-repeat 0 0;}
+            .runBox .map-4 {background: url(http://img1.tiancitycdn.com/project5/csol2/event/2016/0817version/images/map-4.jpg) no-repeat 0 0;}
+            .runNum .on {color:red;}
+            .runContainer .prev,.runContainer .next {position:absolute;top:50%;margin-top:-54px;display:block;width:34px;height:71px;background:url(http://img1.tiancitycdn.com/project5/csol2/event/2016/0817version/images/sprite.png) no-repeat -105px -110px;text-indent: -9999em;opacity: .8}
+            .runContainer .prev:hover,.runContainer .next:hover {opacity: 1}
+            .runContainer .next {right:-55px;background-position: -145px -110px}
+            .runContainer .prev {left:-55px;}
+        </style>
+    </head>
+    <body>
+        <div class="runContainer">
+            <div class="runBox" id="runBox">        
+                <a href="javascript:;" class="map-1"></a>
+                <a href="javascript:;" class="map-2"></a>
+                <a href="javascript:;" class="map-3"></a>
+                <a href="javascript:;" class="map-4"></a>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="runContainer">
+            <div class="runBox" id="runBox2">        
+                <a href="javascript:;" class="map-1"></a>
+                <a href="javascript:;" class="map-2"></a>
+                <a href="javascript:;" class="map-3"></a>
+                <a href="javascript:;" class="map-4"></a>
+            </div>
+        </div>
+        <a href="javascript:;" id="popBtn">弹出对话框</a>
+    	<div id="popView" style="width:200px;height:200px;padding:50px;background: red;display: none">弹窗内容！！！！</div>
+    </body>
+</html>
